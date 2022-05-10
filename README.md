@@ -1,9 +1,3 @@
-<p align="center">
-  <img src="https://codingly-assets.s3-eu-west-1.amazonaws.com/Codingly+Logo.png" width="200px" height="200px"/>
-  </br>
-  <a href="https://codingly.io">codingly.io</a>
-  <br/>
-</p>
 <h1 align="center">Serverless Framework Auth0 Authorizer</h1>
 <p align="center">
   <i><strong>A modern, ES6-friendly Lambda Authorizer ready for integration with Serverless Framework and Auth0.</strong></i>
@@ -21,8 +15,9 @@
 ## Getting started
 
 ### 1. Clone the repository (or generate a serverless project)
+
 ```sh
-sls create --name auth-service --template-url https://github.com/codingly-io/serverless-auth0-authorizer
+sls create --name auth-service --template-url https://github.com/zmzm/serverless-auth0-authorizer
 cd auth-service
 ```
 
@@ -52,7 +47,7 @@ To make sure everything works, send a POST request (using curl, Postman etc.) to
 
 You can grab a test token from Auth0. Make sure to provide your token in the headers like so:
 
-```
+```text
 "Authorization": "Bearer YOUR_TOKEN"
 ```
 
@@ -67,7 +62,7 @@ Fear not, it is very easy to make your authorizer work anywhere else in your AWS
 
 When defining your Lambdas in other services, simply define the `authorizer` as well and provide the ARN of your `auth` function (can be found in the AWS Console or via `sls info`).
 
-#### Example:
+### Example
 
 ```yaml
 functions:
