@@ -1,6 +1,5 @@
 
-service:
-  name: serverless-auth0-authorizer
+service: serverless-auth0-authorizer
 
 plugins:
   - serverless-bundle
